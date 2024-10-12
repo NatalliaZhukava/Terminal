@@ -1,0 +1,30 @@
+
+  302  pwd
+  303  mkdir Homework
+  304  mkdir Homework1
+  305  cd Homework1
+  306  mkdir folder{0..2}
+  307  cd folder0
+  308  touch text{1..3}.txt
+  309  touch {1..2}.json
+  310  mkdir folder{3..5}
+  311  ls -la
+  312  cat > text1.txt 
+  313  cd ..
+  314  mv folder0/text2.txt  folder2/text2.txt
+  315  mv folder0/2.json folder2/2.json
+  316  cp folder0/text1.txt folder1/text1.txt
+  317  cp folder0/1.json folder1/1.json
+  318  find -name real.txt
+  319  cd ..
+  320  find -name real.txt 
+  321  tail -f real.txt 
+  322  tail -f real.txt | grep 1111
+  323  head -3 riddle.txt 
+  324  tail -4 riddle.txt 
+  325  less hp.txt 
+  326  date
+  327  curl http://162.55.220.72:5005/terminal-hw-request
+  328  vim script.sh 
+  329  ./script.sh 
+  330  history > hm1.txt

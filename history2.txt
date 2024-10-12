@@ -1,0 +1,42 @@
+
+  236  mkdir dir_1
+  237  cd dir_1/
+  238  mkdir inner_dir_1
+  239  pwd
+  240  touch tf_1.txt
+  241  cat > tf_2.txt
+  242  cd inner_dir_1/
+  243  cat > tf_3.txt
+  244  cat >> tf_3.txt 
+  245  cat >> tf_3.txt 
+  246  cat >> ../tf_2.txt 
+  247  cat >> tf_3.txt 
+  248  cat >> ../tf_2.txt 
+  249  for i in {1..15}; do echo "Line $i" >> tf_4.txt; done
+  250  for i in {1..13}; do echo "Liiine $i" >> tF_5.txt; done
+  251  ls -la
+  252  cd ..
+  253  cat inner_dir_1/tf_3.txt 
+  254  find -name tf_4.txt
+  255  > inner_dir_1/tf_4.txt 
+  256  find -name "*tf*"
+  257  find -iname "*tf*"
+  258  grep sec *
+  259  grep -i sec *
+  260  grep -w sec *
+  261  grep -wi sec *
+  262  grep second *
+  263  grep -i second *
+  264  grep -r second ./*/
+  265  grep -l second *
+  266  grep -rv second
+  267  grep -rlv second
+  268  tail -4 tf_2.txt 
+  269  head -4 tf_2.txt 
+  270  mkdir newfolder && cat > newfolder/newfile.txt
+  271  grep -rwl "sec" | xargs mv -t newfolder
+  272  grep -rwl "sec" | xargs cp -t inner_dir_1
+  273  grep -rh "sec" > 1.txt
+  274  grep -rwl "sec" | xargs rm
+  275  echo 'Good job!!'
+  276  history > hm2.txt
